@@ -1,0 +1,90 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg-primary);
+}
+
+.register-container h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.025em;
+}
+
+.register-subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.register-container form {
+  width: 100%;
+  max-width: 460px;
+  background: var(--bg-card);
+  padding: 2.25rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-container form::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gradient-accent);
+}
+
+.register-container form div {
+  margin-bottom: 1.1rem;
+}
+
+.register-container label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.register-container button[type="submit"] {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 0.75rem;
+  background: var(--gradient-accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  box-shadow: 0 4px 16px rgba(59,130,246,0.3);
+  letter-spacing: 0.01em;
+}
+.register-container button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(59,130,246,0.45);
+}
+
+.register-container .link-text {
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+.register-container .link-text a {
+  color: var(--accent);
+  font-weight: 600;
+}

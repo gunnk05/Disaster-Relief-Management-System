@@ -1,0 +1,37 @@
+# IDE and OS files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp
+
+# Java / Maven build output
+target/
+**/target/
+*.class
+*.jar
+*.war
+
+# Node / React build output & dependencies
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables & secrets
+.env
+backend/.env
+frontend/.env
+!**/.env.example
+
+# Log files
+*.log
+backend/.maven/
+*.sql.bak
+*.tmp
