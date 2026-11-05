@@ -8,38 +8,11 @@
 | Database   | MySQL 8+ with triggers for audit logging                              |
 | Testing    | JUnit 5, Mockito, MockMvc, H2 (in-memory)                            |
 
-
-### 2. Backend
-
-```bash
+Backend commands
 cd backend
-
-# Set environment variables (or use defaults in application.properties)
-export DB_HOST=localhost
-export DB_PORT=3306
-export DB_NAME=drrms_db
-export DB_USER=root
-export DB_PASSWORD=yourpassword
-export JWT_SECRET=your-secret-key-at-least-32-characters-long
-
-# Build and run (Windows)
 mvn spring-boot:run
 
-# Or (Linux / macOS)
-./mvnw spring-boot:run
-```
-
-The API starts at `http://localhost:8080/api`.
-
-### 3. Frontend
-
-```bash
+Frontend commands
 cd frontend
 npm install
 npm run dev
-
----
-
-## 📄 License
-
-This project is for educational and interview demonstration purposes.
